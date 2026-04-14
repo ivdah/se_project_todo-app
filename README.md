@@ -1,17 +1,25 @@
 # Simple Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+This is a simple Todo application that allows users to add, complete, and delete tasks. The app helps users organize and manage their daily activities efficiently.
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+- Add new tasks
+- Mark tasks as completed
+- Delete tasks
+- Track total and completed tasks
+- Form validation
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+- HTML
+- CSS
+- JavaScript (ES6)
+- OOP (classes)
+- Modular structure
 
 ## Deployment
 
 This project is deployed on GitHub Pages:
 
-- https://github.com/ivdah/se_project_todo-app
+https://ivdah.github.io/se_project_todo-app/

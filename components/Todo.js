@@ -17,13 +17,6 @@ class Todo {
     });
   }
 
-  _getTemplate() {
-    return document
-      .querySelector(this._selector)
-      .content.querySelector(".todo")
-      .cloneNode(true);
-  }
-
   getView() {
     this._todoElement = this._templateElement.content
       .querySelector(".todo")
