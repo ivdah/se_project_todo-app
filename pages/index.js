@@ -22,15 +22,15 @@ const renderTodo = (item) => {
 const addTodoPopup = new PopupWithForm({
   popupSelector: "#add-todo-popup",
   handleFormSubmit: (inputValues) => {
+    newTodoValidator.resetValidation();
     const name = inputValues.name;
     const dateInput = inputValues.date;
     const date = new Date(dateInput);
     date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
     const id = uuidv4();
     const values = { name, date, id };
-    renderTodo(values);
-    addTodoPopup.close();
-    todoCounter.updateTotal(true);
+    const todoEl = generateTodo(values);
+    section.addItem(todoEl);
   },
 });
 
